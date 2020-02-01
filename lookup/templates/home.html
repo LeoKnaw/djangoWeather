@@ -4,9 +4,10 @@
 
     <br/>
     <br/>
+
 {% if api %}
-    {% if api == None %}
-        Somtin Wong...
+    {% if api == 'k' or api == None %}
+        <p>An error occured</p>
     {% else %}
 
         <div class="jumbotron {{ category_color }}">
@@ -15,8 +16,6 @@
           <hr class="my-4">
             {{ category_desc }}
         </div>
-
-
     {% endif %}
 {% endif %}
 {% endblock %}
